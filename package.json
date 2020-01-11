@@ -11,5 +11,9 @@
   "keywords": [
     "validation",
     "regex"
-  ]
+  ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/raysk4ever/raysk-vali.git"
+	}
 }
