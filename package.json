@@ -1,0 +1,15 @@
+{
+  "name": "raysk-vali",
+  "version": "1.0.15",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ravi",
+  "license": "ISC",
+  "keywords": [
+    "validation",
+    "regex"
+  ]
+}
