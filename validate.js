@@ -4,8 +4,8 @@ const isEmail = email =>{
 };
 
 const isEmpty = str =>{
-	if(str == "") return true;
-	else return false;
+	const isEmptyReg = new RegExp(/^\s*\S+.*/);
+	return !isEmptyReg.test(str);
 };
 
 const isMobileNumber = mobile =>{
