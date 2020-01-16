@@ -48,6 +48,16 @@ const isPANNumber = pan =>{
 	return panReg.test(pan);	
 }
 
+const isGSTNumber = gst =>{
+	const gstReg = new RegExp(/\d{2}[A-Z]{5}\d{4}[A-Z]{1}[A-Z\d]{1}[Z]{1}[A-Z\d]{1}/);
+	return gstReg.test(gst);	
+}
+
+const isVehicleNumber = vehicleNumber =>{
+	const vehicleNumberReg = new RegExp(/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/);
+	return vehicleNumberReg.test(vehicleNumber);		
+}
+
 
 module.exports = {
 	isUrl,
