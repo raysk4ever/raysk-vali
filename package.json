@@ -10,7 +10,7 @@
   "license": "ISC",
   "keywords": [
     "validation",
-    "regex"
+    "regex",
     "Url",
     "Date",
     "Email",
@@ -23,7 +23,7 @@
     "GST Number",
     "Vehicle Number",
     "Mongo ObjectId" ],
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "https://github.com/raysk4ever/raysk-vali.git"
   }
