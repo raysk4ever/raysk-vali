@@ -1,3 +1,3 @@
 const Validate = require("./validate");
 
-module.exports = { Validate }
+module.exports = Validate;
