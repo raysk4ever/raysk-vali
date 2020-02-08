@@ -55,7 +55,13 @@ const isGSTNumber = gst =>{
 
 const isVehicleNumber = vehicleNumber =>{
 	const vehicleNumberReg = new RegExp(/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/);
-	return vehicleNumberReg.test(vehicleNumber);		
+	return vehicleNumberReg.test(vehicleNumber);
+}
+
+const isMongoObjectId = id => {
+	// return id.match(/^[a-f\d]{24}$/i);
+	const mongoObjIdReg = new RegExp(/^[a-f\d]{24}$/i);
+	return mongoObjIdReg.test(id);
 }
 
 
@@ -68,5 +74,6 @@ module.exports = {
 	password,
 	isAlphaChar,
 	isMobileNumber,
-	isAlphaNumChar
+	isAlphaNumChar,
+	isMongoObjectId
 }
