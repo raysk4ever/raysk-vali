@@ -65,15 +65,4 @@ const isMongoObjectId = id => {
 }
 
 
-module.exports = {
-	isUrl,
-	isDate,
-	isEmail,
-	isEmpty,
-	isDigit,
-	password,
-	isAlphaChar,
-	isMobileNumber,
-	isAlphaNumChar,
-	isMongoObjectId
-}
+module.exports = { isUrl, isDate, isEmail, isEmpty, isDigit, password, isAlphaChar, isMobileNumber, isAlphaNumChar, isMongoObjectId }

@@ -11,7 +11,18 @@
   "keywords": [
     "validation",
     "regex"
-  ],
+    "Url",
+    "Date",
+    "Email",
+    "Empty String",
+    "Digit",
+    "Alpha Char",
+    "Mobile Number",
+    "Alpha Num Char",
+    "PAN Number",
+    "GST Number",
+    "Vehicle Number",
+    "Mongo ObjectId" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/raysk4ever/raysk-vali.git"
