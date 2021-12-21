@@ -1,14 +1,14 @@
 
-> All type of data validator for JavaScript.
+> Regex based validator for JavaScript.
 
-#install
+# install
 
 ```
 npm i raysk-vali --save
 
 ```
 
-#import
+# import
 
 ```javascript
 const Validate = require("raysk-vali");
@@ -19,7 +19,7 @@ const { isEmail } = require("raysk-vali");
 
 ```
 
-#Usage
+# Usage
 
 ```javascript
 Validate.isEmail("abc@example.com") // true
@@ -40,12 +40,12 @@ Validate.isGSTNumber("27AAPFU0939F1Z0")
 Validate.isVehicleNumber("UT 32 DR 6423") // for indian vehicle number format
 Validate.isMongoObjectId("5e3a7141c65baa1c5d1dd92b")
 ```
-##passing own regex
+## passing own regex
 
 ```javascript
 
-	const { validate } = require("raysk-vali");
-	validate('YOUR VALUE', /^YOUR REGEX$/) // return boolean
+const { validate } = require("raysk-vali");
+validate('YOUR VALUE', /^YOUR REGEX$/) // return boolean
 
 ```
 
