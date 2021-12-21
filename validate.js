@@ -1,3 +1,11 @@
+// const REGEX = {
+// 	email: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+// }
+const validate = (value, regex) => {
+	const reg = new RegExp(regex);
+	return reg.test(value)
+}
+
 const isEmail = email =>{
 	const emailReg = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/);
 	return emailReg.test(email);
@@ -64,5 +72,4 @@ const isMongoObjectId = id => {
 	return mongoObjIdReg.test(id);
 }
 
-
-module.exports = { isUrl, isDate, isEmail, isEmpty, isDigit, password, isAlphaChar, isMobileNumber, isAlphaNumChar, isMongoObjectId }
+module.exports = { validate, isUrl, isDate, isEmail, isEmpty, isDigit, password, isAlphaChar, isMobileNumber, isAlphaNumChar, isMongoObjectId }

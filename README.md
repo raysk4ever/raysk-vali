@@ -40,3 +40,13 @@ Validate.isGSTNumber("27AAPFU0939F1Z0")
 Validate.isVehicleNumber("UT 32 DR 6423") // for indian vehicle number format
 Validate.isMongoObjectId("5e3a7141c65baa1c5d1dd92b")
 ```
+##passing own regex
+
+```javascript
+
+	const { validate } = require("raysk-vali");
+	validate('YOUR VALUE', /^YOUR REGEX$/) // return boolean
+
+```
+
+
