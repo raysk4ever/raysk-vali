@@ -1,6 +1,6 @@
 {
   "name": "raysk-vali",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,9 @@
     "PAN Number",
     "GST Number",
     "Vehicle Number",
-    "Mongo ObjectId" ],
-    "repository": {
+    "Mongo ObjectId"
+  ],
+  "repository": {
     "type": "git",
     "url": "https://github.com/raysk4ever/raysk-vali.git"
   }
