@@ -16,11 +16,11 @@ yarn add raysk-vali
 # Usage
 
 ```javascript
-const Validate = require("raysk-vali");
+import Validate from 'raysk-vali'
 ```
 OR
 ```javascript
-const { isEmail } = require("raysk-vali");
+import { isEmail } from 'raysk-vali'
 ```
 
 # Example
