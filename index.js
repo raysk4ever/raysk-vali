@@ -1,3 +1,3 @@
-const Validate = require("./validate");
+import Validate from './validate'
 
 module.exports = Validate;

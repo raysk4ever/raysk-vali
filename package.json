@@ -2,8 +2,11 @@
   "name": "raysk-vali",
   "version": "1.0.21",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "npm:patch": "npm version patch",
+    "npm:publish": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ravi",

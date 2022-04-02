@@ -1,51 +1,61 @@
 
-> Regex based validator for JavaScript.
+## Regex based validator for JavaScript.
 
 # install
 
 ```
-npm i raysk-vali --save
+npm i raysk-vali
 
 ```
-
-# import
-
-```javascript
-const Validate = require("raysk-vali");
-
-// or
-
-const { isEmail } = require("raysk-vali");
+or if you use yarn
+```
+yarn add raysk-vali
 
 ```
 
 # Usage
 
 ```javascript
-Validate.isEmail("abc@example.com") // true
-Validate.isEmail("abcexample.com") // false
-
-// more examples
-
-Validate.isUrl("www.example.com")
-Validate.isDate("12/12/2020")
-Validate.isEmpty("  ")
-Validate.isDigit(22)
-Validate.password("password")
-Validate.isAlphaChar("asd")
-Validate.isMobileNumber("+919999999999")
-Validate.isAlphaNumChar("asd12")
-Validate.isPANNumber("ABCPK4956K")
-Validate.isGSTNumber("27AAPFU0939F1Z0")
-Validate.isVehicleNumber("UT 32 DR 6423") // for indian vehicle number format
-Validate.isMongoObjectId("5e3a7141c65baa1c5d1dd92b")
+const Validate = require("raysk-vali");
 ```
-## passing own regex
+OR
+```javascript
+const { isEmail } = require("raysk-vali");
+```
+
+# Example
 
 ```javascript
+isEmail("abc@example.com") // true
+isEmail("abcexample.com") // false
 
+isUrl("www.example.com")
+isDate("12/12/2020")
+isEmpty("  ")
+isDigit(22)
+password("password")
+isAlphaChar("asd")
+isMobileNumber("+919999999999")
+isAlphaNumChar("asd12")
+isPANNumber("ABCPK4956K")
+isGSTNumber("27AAPFU0939F1Z0")
+isVehicleNumber("UT 32 DR 6423") // for indian vehicle number format
+isMongoObjectId("5e3a7141c65baa1c5d1dd92b")
+```
+
+
+## Custom Regex
+you can pass custom regex for searching.
+
+```js
+validate('YOUR VALUE', /^YOUR REGEX$/) : Boolean
+```
+
+```javascript
 const { validate } = require("raysk-vali");
-validate('YOUR VALUE', /^YOUR REGEX$/) // return boolean
+
+const isValid = validate('this is awesome.', /^awesome$/)
+console.log(isValid)
 
 ```
 
