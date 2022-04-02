@@ -52,7 +52,7 @@ validate('YOUR VALUE', /^YOUR REGEX$/) : Boolean
 ```
 
 ```javascript
-const { validate } = require("raysk-vali");
+import { validate } from 'raysk-vali'
 
 const isValid = validate('this is awesome.', /^awesome$/)
 console.log(isValid)
