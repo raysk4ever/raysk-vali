@@ -41,6 +41,9 @@ isPANNumber("ABCPK4956K")
 isGSTNumber("27AAPFU0939F1Z0")
 isVehicleNumber("UT 32 DR 6423") // for indian vehicle number format
 isMongoObjectId("5e3a7141c65baa1c5d1dd92b")
+
+isEven(20) // true
+isOdd(20) // false
 ```
 
 
