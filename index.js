@@ -1,3 +1,3 @@
 import Validate from './validate'
 
-module.exports = Validate;
+module.exports = Validate

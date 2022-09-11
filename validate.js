@@ -69,6 +69,9 @@ export const isMongoObjectId = id => {
   return mongoObjIdReg.test(id);
 }
 
+export const isEven = number => number % 2 === 0
+export const isOdd = number => !isEven(number)
+
 export default {
   validate,
   isUrl,
@@ -83,5 +86,7 @@ export default {
   isMongoObjectId,
   isPANNumber,
   isGSTNumber,
-  isVehicleNumber
+  isVehicleNumber,
+  isEven,
+  isOdd
 }
